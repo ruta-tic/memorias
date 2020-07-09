@@ -42,6 +42,15 @@ h3 {
 /********************************************************************************/
 /* General
 /********************************************************************************/
+.scroll_top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+    top: 0;
+    background-color: #fff;
+}
+
 .mas a {
     display: flex;
     align-items: center;
@@ -257,7 +266,7 @@ h3 {
 .icono.icono-buscar {
     width: 25px;
     height: 25px;
-    background-position: -90px -43px;
+    background-position: -448px -5px;
 }
 
 .icono.comillas-abrir {
@@ -288,15 +297,18 @@ header {
 header .menu-ppal,
 header img {
     padding-left: 50px;
+    padding-bottom: 1px;
 }
 
 header .redes-sociales {
-    float: right;
-    padding: 2% 4%;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding-top: 15px;
 }
 
 header .redes-sociales div,
@@ -879,7 +891,7 @@ header #navbar .redes-sociales a {
 
 #experiencias .col-2.text h3,
 #experiencias .col-2.text p {
-    padding: 0 10% 0 12%;
+    padding: 0 62px 0 70px;
 }
 
 #experiencias .col-2.text div {
