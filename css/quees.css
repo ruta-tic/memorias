@@ -14,10 +14,11 @@
     max-width: 1200px;
     margin: auto;
     padding: 2% 5%;
+    align-items: flex-start;
 }
 .col-2.text {
-    width: 38%;
-    min-width: 38%;
+    width: 50%;
+    min-width: 50%;
     padding-right: 3%;
     padding-left: 0;
 }
@@ -27,12 +28,11 @@
     background-size: 100%;
     position: relative;
     padding-top: 36%;
-    width: 60%
 }
 
 .col-2.video-cont video {
     position: absolute;
-    top: 9%;
+    top: 8%;
     left: 2.5%;
     width: 95%;
 }

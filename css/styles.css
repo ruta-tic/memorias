@@ -82,7 +82,7 @@ h3 {
 .row {
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 0 30px 30px;
 }
 
 .col-2 {
@@ -91,6 +91,33 @@ h3 {
 
 .video-cont video {
     max-width: 100%;
+}
+
+#menu-lateral {
+    position: absolute;
+    left: 4%;
+    padding-top: 30px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#menu-lateral .btn {
+    width: 8px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #bdbdbd;
+    cursor: pointer;
+    padding: 0;
+}
+
+#menu-lateral .btn:hover,
+#menu-lateral .btn:active,
+#menu-lateral .btn:focus {
+    background-color: #db9e31;
+    border-color: #db9e31;
 }
 /********************************************************************************/
 /* Iconos
@@ -221,13 +248,13 @@ h3 {
     background-position: -369px -86px;
 }
 
-.icono.birrete-small-oscuro {
+.icono.galeria-oscuro {
     width: 34px;
     height: 28px;
     background-position: -405px -5px;
 }
 
-.icono.birrete-small-blanco {
+.icono.galeria-blanco {
     width: 34px;
     height: 28px;
     background-position: -405px -43px;
@@ -245,13 +272,13 @@ h3 {
     background-position: -413px -167px;
 }
 
-.icono.icono-instagram-oscuro {
+.icono.icono-twitter-oscuro {
     width: 34px;
     height: 28px;
     background-position: -369px -205px;
 }
 
-.icono.icono-instagram-claro {
+.icono.icono-twitter-claro {
     width: 34px;
     height: 28px;
     background-position: -413px -205px;
@@ -266,7 +293,7 @@ h3 {
 .icono.icono-buscar {
     width: 25px;
     height: 25px;
-    background-position: -448px -5px;
+    background-position: -90px -43px;
 }
 
 .icono.comillas-abrir {
@@ -308,12 +335,12 @@ header .redes-sociales {
     right: 0;
     background-color: #fff;
     z-index: 2;
-    padding-top: 15px;
+    padding-top: 12px;
 }
 
 header .redes-sociales div,
 header .redes-sociales a {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 header .buscador {
@@ -556,7 +583,11 @@ header #navbar .redes-sociales a {
 
 #equipo .modal-content .colaboradores .colaborador {
     width: 200px;
-    margin: 50px 0;
+    margin: 40px 0;
+}
+
+#equipo .modal-content .colaboradores .colaborador.par {
+    margin-top: 80px;
 }
 
 #equipo .modal-content .nombre {
@@ -590,7 +621,7 @@ header #navbar .redes-sociales a {
     display: none; 
     position: fixed; 
     z-index: 2;
-    padding-top: 50px;
+    padding-top: 60px;
     left: 0;
     top: 0;
     width: 100%;
@@ -630,16 +661,16 @@ header #navbar .redes-sociales a {
     min-width: 47%;
 }
 
-.modal_container .row .foto0 {background: url(../img/investigadores/maribelsalazar.png) no-repeat top;}
-.modal_container .row .foto1 {background: url(../img/investigadores/davidherney.png) no-repeat top;}
-.modal_container .row .foto2 {background: url(../img/investigadores/maria_mercedes.png) no-repeat top;}
-.modal_container .row .foto3 {background: url(../img/investigadores/vanessa-arias.png) no-repeat top;}
-.modal_container .row .foto4 {background: url(../img/investigadores/angela-valderrama.png) no-repeat top;}
-.modal_container .row .foto5 {background: url(../img/investigadores/marcelapalacio.png) no-repeat top;}
-.modal_container .row .foto6 {background: url(../img/investigadores/herlaynne.png) no-repeat top;}
-.modal_container .row .foto7 {background: url(../img/investigadores/dianaospina.png) no-repeat top;}
-.modal_container .row .foto8 {background: url(../img/investigadores/wilmergil.png) no-repeat top;}
-.modal_container .row .foto9 {background: url(../img/investigadores/marisol.png) no-repeat top;}
+.modal_container .row .foto0 {background: url(../content/investigadores/maribelsalazar.png) no-repeat top;}
+.modal_container .row .foto1 {background: url(../content/investigadores/davidherney.png) no-repeat top;}
+.modal_container .row .foto2 {background: url(../content/investigadores/maria_mercedes.png) no-repeat top;}
+.modal_container .row .foto3 {background: url(../content/investigadores/vanessa-arias.png) no-repeat top;}
+.modal_container .row .foto4 {background: url(../content/investigadores/angela-valderrama.png) no-repeat top;}
+.modal_container .row .foto5 {background: url(../content/investigadores/marcelapalacio.png) no-repeat top;}
+.modal_container .row .foto6 {background: url(../content/investigadores/herlaynne.png) no-repeat top;}
+.modal_container .row .foto7 {background: url(../content/investigadores/dianaospina.png) no-repeat top;}
+.modal_container .row .foto8 {background: url(../content/investigadores/wilmergil.png) no-repeat top;}
+.modal_container .row .foto9 {background: url(../content/investigadores/marisol.png) no-repeat top;}
 
 .modal_container .row .foto {
     background-size: 100%;
@@ -735,6 +766,7 @@ header #navbar .redes-sociales a {
 
 #eventos .row {
     padding: 0 80px 50px 100px;
+
 }
 
 #eventos .row .col-2.text {
@@ -910,6 +942,13 @@ header #navbar .redes-sociales a {
     top: 19%;
     left: 2.8%;
 }
+
+#experiencias #menu-lateral {
+    padding-top: 60px;
+    height: 380px;
+}
+
+#experiencias #menu-lateral .btn {height: 32px;}
 /********************************************************************************/
 /* Footer
 /********************************************************************************/
