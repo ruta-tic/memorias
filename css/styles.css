@@ -119,8 +119,7 @@ h3 {
 }
 
 #menu-lateral .btn:hover, #menu-lateral .btn2:hover,
-#menu-lateral .btn:active, #menu-lateral .btn2:active,
-#menu-lateral .btn:focus, #menu-lateral .btn2:focus {
+#menu-lateral .btn.active, #menu-lateral .btn2.active {
     background-color: #db9e31;
     border-color: #db9e31;
 }
@@ -829,6 +828,7 @@ header #navbar .redes-sociales a {
     background-size: 100% 100%;
     margin-top: -150px;
     position: relative;
+    min-height: 500px;
 }
 
 #eventos h1 {
@@ -1081,6 +1081,7 @@ footer a {
     border: none;
 }
 
+#recursos .recurso.active,
 #recursos .recurso:hover {
     background-color: #97d8de;
     transform: scale(1.1);
@@ -1092,6 +1093,7 @@ footer a {
 
 #recursos .recurso img {
     margin-bottom: 10px;
+    position: relative;
 }
 
 #recursos .sonidos,

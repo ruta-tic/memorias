@@ -101,6 +101,8 @@ $(document).ready(function() {
         $('.event').hide(500,"swing");
         $(id).css('position', "static");        
         $(id).slideDown(500,"swing");
+        $('.btn').removeClass('active');
+        $(this).addClass('active');
     });
 
     //menu vertical 2
@@ -110,24 +112,18 @@ $(document).ready(function() {
         $('.exp').hide(500,"swing");
         $(id).css('position', "static");
         $(id).slideDown(500,"swing");
+        $('.btn2').removeClass('active');
+        $(this).addClass('active');
     });
     
 //Mostrar
-    $('.recurso.foto').click(function(){
+    $('.recurso').click(function(){
+        var id = $(this).attr('data-rec-id');
+
         $('.cont').hide(500,"swing");
-        $('#foto').show(500,"swing");
-    });
-    $('.recurso.ilustracion').click(function(){
-        $('.cont').hide(500,"swing");
-        $('#ilus').show(500,"swing");
-    });
-    $('.recurso.video').click(function(){
-        $('.cont').hide(500,"swing");
-        $('#vid').show(500,"swing");
-    });
-    $('.recurso.sonido').click(function(){
-        $('.cont').hide(500,"swing");
-        $('#son').show(500,"swing");
+        $(id).slideDown(500,"swing");
+        $('.recurso').removeClass('active');
+        $(this).addClass('active');
     });
 
 //Menu de navegación
