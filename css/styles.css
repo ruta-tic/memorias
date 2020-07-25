@@ -10,6 +10,10 @@
         url('fonts/Montserrat/Montserrat-Regular.woff') format('woff')
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -104,7 +108,8 @@ h3 {
     justify-content: space-around;
 }
 
-#menu-lateral .btn {
+#menu-lateral .btn,
+#menu-lateral .btn2 {
     width: 8px;
     height: 40px;
     border-radius: 6px;
@@ -113,9 +118,9 @@ h3 {
     padding: 0;
 }
 
-#menu-lateral .btn:hover,
-#menu-lateral .btn:active,
-#menu-lateral .btn:focus {
+#menu-lateral .btn:hover, #menu-lateral .btn2:hover,
+#menu-lateral .btn:active, #menu-lateral .btn2:active,
+#menu-lateral .btn:focus, #menu-lateral .btn2:focus {
     background-color: #db9e31;
     border-color: #db9e31;
 }
@@ -124,6 +129,12 @@ h3 {
 /********************************************************************************/
 .icono {
     background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icono2 {
+    background-image: url(../img/spritesheet2.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -150,6 +161,12 @@ h3 {
     width: 11px;
     height: 16px;
     background-position: -111px -5px;
+}
+
+.icono2.flecha-gris {
+    width: 11px;
+    height: 17px;
+    background-position: -113px -5px;
 }
 
 .icono.birrete-azul {
@@ -312,6 +329,62 @@ h3 {
     width: 70px;
     height: 57px;
     background-position: -78px -364px;
+}
+
+.icono2.scorm {
+    width: 30px;
+    height: 26px;
+    background-position: -155px -5px;
+}
+/******************************/
+/* Edificios
+/******************************/
+.icono2.articulandosaberes {
+    width: 189px;
+    height: 200px;
+    background-position: -271px -5px;
+}
+
+.icono2.educacion1 {
+    width: 113px;
+    height: 139px;
+    background-position: -5px -215px;
+}
+
+.icono2.educacion2 {
+    width: 145px;
+    height: 136px;
+    background-position: -128px -215px;
+}
+
+.icono2.ingenieria1 {
+    width: 282px;
+    height: 203px;
+    background-position: -470px -5px;
+}
+
+.icono2.ingenieria2 {
+    width: 285px;
+    height: 213px;
+    background-position: -283px -218px;
+}
+
+.icono2.salud1 {
+    width: 184px;
+    height: 200px;
+    background-position: -578px -218px;
+}
+
+.icono2.salud2 {
+    width: 152px;
+    height: 147px;
+    background-position: -5px -428px;
+}
+
+.icono2.tecnologias-educacion {
+    width: 178px;
+    height: 156px;
+    background-position: -578px -428px;
 }
 /********************************************************************************/
 /* Header
@@ -613,7 +686,6 @@ header #navbar .redes-sociales a {
     padding-left: 0;
     list-style:none;
 }
-
 /********************************************************************************/
 /* Modal
 /********************************************************************************/
@@ -948,7 +1020,7 @@ header #navbar .redes-sociales a {
     height: 380px;
 }
 
-#experiencias #menu-lateral .btn {height: 32px;}
+#experiencias #menu-lateral .btn2 {height: 32px;}
 /********************************************************************************/
 /* Footer
 /********************************************************************************/
@@ -986,4 +1058,416 @@ footer .contact {text-align: right;margin:10px;}
 footer a {
     text-decoration: none;
     color: #fff;
+}
+/********************************************************************************/
+/* Recursos multimedia
+/********************************************************************************/
+#recursos .recursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+#recursos .recurso {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    transition: transform .5s;
+    font-size: 20px;
+    margin: 3px;
+    border: none;
+}
+
+#recursos .recurso:hover {
+    background-color: #97d8de;
+    transform: scale(1.1);
+    transition: transform .5s;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#recursos .recurso img {
+    margin-bottom: 10px;
+}
+
+#recursos .sonidos,
+#recursos .videos,
+#recursos .ilustraciones,
+#recursos .fotografias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 30px 30px;
+    position: relative;
+    margin-top: 50px;
+}
+
+#recursos .sonidos,
+#recursos .videos,
+#recursos .ilustraciones {
+    padding-top: 30px;
+}
+
+#recursos .buscador {
+    padding: 5px;
+    background-color: #f4f4f4;
+    width: 200px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+#recursos .buscador .icono {
+    float: right;
+    margin: 0;
+}
+
+#recursos .buscador input {
+    border: none;
+    background-color: transparent;
+}
+
+#recursos .videos .video,
+#recursos .ilustraciones .ilustracion,
+#recursos .fotografias .foto {
+    background-color: #f6f6f6;
+    width: 250px;
+    height: auto;
+    margin: 20px;
+}
+
+#recursos .videos .iconos,
+#recursos .ilustracion .iconos,
+#recursos .foto .iconos {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#recursos .iconos div {
+    cursor: pointer;
+}
+
+#recursos .iconos .image {
+    background: url(../img/spritesheet2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+#recursos .iconos .video-icon {
+    background: url(../img/spritesheet2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    background-position: -41px -5px;
+}
+
+#recursos .iconos .formato {
+    color: #ffac31;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#recursos .iconos .download {
+    background: url(../img/spritesheet2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    background-position: -77px -5px;
+}
+
+#recursos .videos img,
+#recursos .ilustracion img,
+#recursos .fotografias .foto img {
+    width: 100%;
+}
+
+#recursos p.name {
+    padding-left: 10px;
+}
+
+#recursos .filter {
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    width: 100%;
+}
+
+#recursos .filter ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#recursos .filter ul li {
+    padding: 5px 20px;
+    border-left: 1px solid #f3f3f3;
+    cursor: pointer;
+}
+
+#recursos .filter ul li:first-child {
+    border-left: none;
+}
+
+#recursos .filter ul li:hover {
+    color: #74c8d2;
+}
+
+#recursos .cont.sonidos {
+    flex-direction: column;
+    width: 100%;
+}
+
+#recursos .cont.sonidos .sonido {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    margin-top: 5px;
+}
+
+#recursos .cont.sonidos .sonido .info {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    cursor: pointer;
+}
+
+#recursos .cont.sonidos audio {width: 500px;}
+/********************************************************************************/
+/* Contenidos interactivos
+/********************************************************************************/
+#interactivos .contenidos {
+    display: flex;
+    flex-direction: column;
+}
+
+#interactivos .contenidos .cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    margin-top: 10px;
+}
+
+#interactivos .contenidos .cont .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 110px;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#interactivos .contenidos .cont .prev {
+    min-width: 110px;
+    border-left: 1px solid #f3f3f3;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#interactivos .contenidos .cont .name {
+    min-width: 200px;
+    font-size: 18px;
+    border-right: 1px solid #f3f3f3;
+    padding-right: 20px;
+}
+
+#interactivos .contenidos .description {padding: 5px 20px;}
+
+#interactivos .iconos .download {
+    background: url(../img/spritesheet2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    background-position: -77px -5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/********************************************************************************/
+/* Contenidos scorm
+/********************************************************************************/
+#scorm .contenidos {
+    display: flex;
+    flex-direction: column;
+}
+
+#scorm .contenidos .cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    margin-top: 10px;
+}
+
+#scorm .contenidos .scorm {
+    min-width: 40px;
+}
+
+#scorm .contenidos .cont .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 110px;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#scorm .contenidos .cont .prev {
+    min-width: 110px;
+    border-left: 1px solid #f3f3f3;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#scorm .contenidos .cont .name {
+    min-width: 200px;
+    font-size: 18px;
+    border-right: 1px solid #f3f3f3;
+    padding-right: 20px;
+}
+
+#scorm .contenidos .description {padding: 5px 20px;}
+
+#scorm .iconos .download {
+    background: url(../img/spritesheet2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    background-position: -77px -5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/********************************************************************************/
+/* Contenidos Cursos
+/********************************************************************************/
+#cursos h1 {
+    width: 150px;
+    position: absolute;
+}
+
+#cursos .map {
+    background: url(../content/ruta-calles.svg) no-repeat;
+    background-size: 100%;
+    width: 1024px;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#cursos .map .icono2 {
+    position: absolute;
+    filter: grayscale(1);
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all .3s;
+    background-color: transparent;
+    border: none;
+}
+
+#cursos .map .icono2:hover {
+    filter: grayscale(0);
+    transform: scale(1);
+    transition: all .7s;
+}
+
+#cursos .icono2:hover:after {
+    width: 100px;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#cursos .map img {
+    position: absolute;
+}
+
+#cursos .tecnologias-educacion { top: 103px; left: 215px;}
+#cursos .tecnologias-educacion img { left: 40%; top: -10%;}
+#cursos .tecnologias-educacion:hover:after {
+    content: "Tecnologias educacion";
+    bottom: 170px;
+    left: 36px;
+}
+#cursos .salud2 { top: 83px; left: 663px;}
+#cursos .salud2 img {left: 53%; top: -8%;}
+#cursos .salud2:hover:after {
+    content: "salud2";
+    bottom: 160px;
+    left: 48px;
+}
+#cursos .salud1 { left: 574px; top: -6px;}
+#cursos .salud1 img {left: 43%; top: -9%;}
+#cursos .salud1:hover:after {
+    content: "salud1";
+    bottom: 220px;
+    left: 46px;
+}
+#cursos .ingenieria2 { top: 123px; left: 432px;}
+#cursos .ingenieria2 img {left: 40%; top: 10%;}
+#cursos .ingenieria2:hover:after {
+    content: "ingenieria2";
+    bottom: 195px;
+    left: 78px;
+}
+#cursos .ingenieria1 { top: 233px; left: 269px;}
+#cursos .ingenieria1 img {left: 45%; top: 6%;}
+#cursos .ingenieria1:hover:after {
+    content: "ingenieria1";
+    bottom: 194px;
+    left: 92px;
+}
+#cursos .articulandosaberes { left: 643px; top: 312px;}
+#cursos .articulandosaberes img {left: 38%; top: -9%;}
+#cursos .articulandosaberes:hover:after {
+    content: "Articulando saberes";
+    bottom: 220px;
+    left: 38px;
+}
+#cursos .educacion2 { top: 372px; left: 242px;}
+#cursos .educacion2 img {left: 22%; top: -10%;}
+#cursos .educacion2:hover:after {
+    content: "educacion2";
+    bottom: 152px;
+}
+#cursos .educacion1 { top: 325px; left: 175px;}
+#cursos .educacion1 img {left: 23%; top: -15%;}
+#cursos .educacion1:hover:after {
+    content: "educacion1";
+    bottom: 160px;
+    left: -5px;
+
+}
+
+#cursos .modal-content {
+    background-color: #f2f2f2;
+    padding-top: 30px;
+}
+
+#cursos .modal-content .close {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 98%;
+    text-align: right;
+    background-color: #e8e8e8;
+    padding-right: 2%;
 }

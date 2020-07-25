@@ -566,12 +566,12 @@
         <section id="eventos">
             <h1>Participación en eventos</h1>
             <div id="menu-lateral">
-                <button id="btn-edutec" class="btn btn-edutec" data-event="#edutec"></button>
-                <button id="btn-integratic" class="btn btn-integratic"></button>
-                <button id="btn-edunovatic" class="btn btn-edunovatic"></button>
-                <button id="btn-foro1" class="btn btn-foro1"></button>
-                <button id="btn-foro2" class="btn btn-foro2"></button>
-                <button id="btn-foro3" class="btn btn-foro3"></button>
+                <button class="btn btn-edutec" data-menu-id="#edutec"></button>
+                <button class="btn btn-integratic" data-menu-id="#integratic"></button>
+                <button class="btn btn-edunovatic" data-menu-id="#edunovatic"></button>
+                <button class="btn btn-foro1" data-menu-id="#foro1"></button>
+                <button class="btn btn-foro2" data-menu-id="#foro2"></button>
+                <button class="btn btn-foro3" data-menu-id="#foro3"></button>
             </div>
             <div id="edutec" class="row event edutec">
                 <div class="col-2 text">
@@ -587,7 +587,7 @@
                     <img src="content/eventos/eventos_edutec.png" alt="EDUTEC 2019" />
                 </div>
             </div>
-            <div class="row event integratic" style="display: none">
+            <div id="integratic" class="row event integratic" style="display: none">
                 <div class="col-2 text">
                     <h2>Integratic 2019</h2>
                     <p><strong>RutaTIC Ruta de apropiación de las TIC para cualificar las prácticas docentes en Educación Superior para la modalidad virtual.</strong></p>
@@ -601,7 +601,7 @@
                     <img src="content/eventos/eventos_integratic.png" alt="Integratic 2019" />
                 </div>
             </div>
-            <div class="row event edunovatic" style="display: none;">
+            <div id="edunovatic" class="row event edunovatic" style="display: none;">
                 <div class="col-2 text">
                     <h2>EDUNOVATIC 2019</h2>
                     <p><strong>Ruta TIC: En la búsqueda de mejorar la práctica de profesores universitarios para la modalidad virtual.</strong></p>
@@ -615,7 +615,7 @@
                     <img src="content/eventos/eventos_edunovatic.png" alt="EDUNOVATIC 2019" />
                 </div>
             </div>
-            <div class="row event foro1" style="display: none;">
+            <div id="foro1" class="row event foro1" style="display: none;">
                 <div class="col-2 text">
                     <h2>IV foro internacional de investigación en Ambientes Virtuales de Aprendizaje</h2>
                     <p><strong>Ruta de apropiación de las Tecnologías de la información y comunicación para profesores de educación superior.</strong></p>
@@ -628,7 +628,7 @@
                     <img src="content/eventos/eventos_foro.png" alt="IV foro internacional de investigación en Ambientes Virtuales de Aprendizaje" />
                 </div>
             </div>
-            <div class="row event foro2" style="display: none">
+            <div id="foro2" class="row event foro2" style="display: none">
                 <div class="col-2 text">
                     <h2>IV foro internacional de investigación en Ambientes Virtuales de Aprendizaje</h2>
                     <p><strong>Integración de elementos de juego en ruta de apropiación de nuevas tecnologías para cualificar la práctica docente.</strong></p>
@@ -642,7 +642,7 @@
                     <img src="content/eventos/eventos_foro.png" alt="IV foro internacional de investigación en Ambientes Virtuales de Aprendizaje" />
                 </div>
             </div>
-            <div class="row event foro3" style="display: none">
+            <div id="foro3" class="row event foro3" style="display: none">
                 <div class="col-2 text">
                     <h2>Primer Foro virtual de Evaluación Formativa “Por una evaluación diferenciada en tiempos de crisis, para profesores en formación inicial y continua”. Montería. 29 de mayo de 2020</h2>
                     <p><strong>Ruta TIC: una apuesta por el aprendizaje a través de e-actividades.</strong></p>
@@ -668,15 +668,15 @@
                 </div>
                 <div class="producto naranja graficos">
                     <div class="icono img-blanca"></div>
-                    <h3>Recursos multimedia</h3>
+                    <h3>Recursos</h3>
                     <p>Ut suscipit odio ac purus malesuada dictum. Donec ornare leo quam, in hendrerit ex pretium sed. Aenean id accumsan mauris. Donec nibh massa, feugiat et finibus et, facilisis a tellus.</p>
-                    <p class="mas"><a class="boton">explorar<i class="icono flecha-azul"></i></a></p>
+                    <p class="mas"><a class="boton" href="content/productos/recursos.html">explorar<i class="icono flecha-azul"></i></a></p>
                 </div>
                 <div class="producto azul interactivos">
                     <div class="icono dedo-blanco"></div>
                     <h3>Contenidos interactivos</h3>
                     <p>Ut suscipit odio ac purus malesuada dictum. Donec ornare leo quam, in hendrerit ex pretium sed. Aenean id accumsan mauris. Donec nibh massa, feugiat et finibus et, facilisis a tellus.</p>
-                    <p class="mas"><a class="boton">explorar<i class="icono flecha-azul"></i></a></p>
+                    <p class="mas"><a class="boton" href="content/productos/interactivos.html">explorar<i class="icono flecha-azul"></i></a></p>
                 </div>
                 <div class="producto naranja resultados">
                     <div class="icono barras-blanco"></div>
@@ -688,7 +688,7 @@
                     <div class="icono carpeta-blanca"></div>
                     <h3>Paquetes SCORM</h3>
                     <p>Ut suscipit odio ac purus malesuada dictum. Donec ornare leo quam, in hendrerit ex pretium sed. Aenean id accumsan mauris. Donec nibh massa, feugiat et finibus et, facilisis a tellus.</p>
-                    <p class="mas"><a class="boton">explorar<i class="icono flecha-azul"></i></a></p>
+                    <p class="mas"><a class="boton" href="content/productos/scorm.html">explorar<i class="icono flecha-azul"></i></a></p>
                 </div>
                 <div class="producto naranja herramientas">
                     <div class="icono mando-blanco"></div>
@@ -700,7 +700,7 @@
                     <div class="icono pc-ruta-blanco"></div>
                     <h3>Cursos Ruta<strong>TIC</strong></h3>
                     <p>Ut suscipit odio ac purus malesuada dictum. Donec ornare leo quam, in hendrerit ex pretium sed. Aenean id accumsan mauris. Donec nibh massa, feugiat et finibus et, facilisis a tellus.</p>
-                    <p class="mas"><a class="boton">explorar<i class="icono flecha-azul"></i></a></p>
+                    <p class="mas"><a class="boton" href="content/productos/cursos.html">explorar<i class="icono flecha-azul"></i></a></p>
                 </div>
                 <div class="producto gris perceptio">
                     <div class="icono pc-codigo-blanco"></div>
@@ -713,19 +713,19 @@
 
         <section id="experiencias">
             <div id="menu-lateral">
-                <button id="btn-alex" class="btn btn-alex"></button>
-                <button id="btn-catalina" class="btn btn-catalina"></button>
-                <button id="btn-diana" class="btn btn-diana"></button>
-                <button id="btn-jake" class="btn btn-jake"></button>
-                <button id="btn-jas" class="btn btn-jas"></button>
-                <button id="btn-jorge" class="btn btn-jorge"></button>
-                <button id="btn-lili" class="btn btn-lili"></button>
-                <button id="btn-marga" class="btn btn-marga"></button>
-                <button id="btn-tati" class="btn btn-tati"></button>
-                <button id="btn-jorgej" class="btn btn-jorgej"></button>
-                <button id="btn-luis" class="btn btn-luis"></button>
+                <button class="btn2" data-menu-id="#alex"></button>
+                <button class="btn2" data-menu-id="#catalina"></button>
+                <button class="btn2" data-menu-id="#diana"></button>
+                <button class="btn2" data-menu-id="#jake"></button>
+                <button class="btn2" data-menu-id="#jas"></button>
+                <button class="btn2" data-menu-id="#jorge"></button>
+                <button class="btn2" data-menu-id="#lili"></button>
+                <button class="btn2" data-menu-id="#marga"></button>
+                <button class="btn2" data-menu-id="#tati"></button>
+                <button class="btn2" data-menu-id="#jorgej"></button>
+                <button class="btn2" data-menu-id="#luis"></button>
             </div>
-            <div class="row exp alex">
+            <div id="alex" class="row exp">
                 <div class="col-2 text">
                     <div>
                         <p>El diplomado nos ayuda a que nuestras aulas o cursos virtuales tengan dinamismo, facilidad y creatividad para que los estudiantes estén motivados.</p>
@@ -739,7 +739,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp catalina" style="display: none" style="display: none">
+            <div id="catalina" class="row exp" style="display: none" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>La experiencia general del diplomado fue muy satisfactoria y enriquecedora, pues llegó en el momento preciso, para la coyuntura que estamos pasando en el momento.</p>
@@ -753,7 +753,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp diana" style="display: none">
+            <div id="diana" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Del diplomado destaco los encuentros sincrónicos, ya que permitieron estar en comunicación directa con el equipo coordinador del curso.</p>
@@ -767,7 +767,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp jake" style="display: none">
+            <div id="jake" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>    
                         <p>Como docente, me facilitó interactuar con muchos otros profesionales en diferentes áreas; facilitó que tuviera herramientas de interactividad y conectividad con los estudiantes.</p>
@@ -781,7 +781,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp jas" style="display: none">
+            <div id="jas" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Fue un espacio donde se propició el reencuentro y la reestructuración de muchas estrategias educativas, que me permitió encontrar y descubrir muchas potencialidades para mi curso.</p>
@@ -795,7 +795,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp jorge" style="display: none">
+            <div id="jorge" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>El diplomado se ha instaurado como una estrategia que nos permite optimizar los objetivos de nuestras planeaciones. Nos hace ver la necesidad y la urgencia de estar actualizados en diversas herramientas, para posibilitar el derecho a la educación de los estudiantes.</p>
@@ -809,7 +809,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp lili" style="display: none">
+            <div id="lili" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Me gustaron mucho las actividades interactivas que diseñaron en este diplomado, la variedad en el formato de los contenidos; además de la selección de recursos, porque le apuntaron a diversas áreas del conocimiento.</p>
@@ -823,7 +823,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp marga" style="display: none">
+            <div id="marga" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Mi apreciación hacia el diplomado es excelente. Muy innovador en la creación de sus materiales educativos interactivos.</p>
@@ -837,7 +837,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp tati" style="display: none">
+            <div id="tati" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Como docente, estoy bastante satisfecha con lo aprendido en el curso, con el acompañamiento, la estructura, el suministro de las diferentes herramientas y con la plataforma, que me permite acceder desde diferentes dispositivos.</p>
@@ -851,7 +851,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp jorgej" style="display: none">
+            <div id="jorgej" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Partimos de un punto donde lo principal fue la contextualización y el reconocimiento. Posteriormente fuimos pasando por el análisis, hasta llegar a una etapa donde teníamos elementos para crear y aplicar todo lo aprendido.</p>
@@ -865,7 +865,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row exp luis" style="display: none">
+            <div id="luis" class="row exp" style="display: none">
                 <div class="col-2 text">
                     <div>
                         <p>Pude disfrutar y aprender realizando actividades interactivas y fascinantes, lo cual hace que el proceso sea bastante cómodo de recorrer.</p>
@@ -913,8 +913,8 @@
                     <li><a href="content/productos/herramientas.html">Herramientas de software para gamificación</a></li>
                     <li>Cursos casos de estudio Perceptio</li>
                     <li><a href="content/productos/moodle.html">Plataforma moodle</a></li>
-                    <li>8 Cursos de la Ruta de formación</li>
-                    <li>Recursos gráficos y audiovisuales</li>
+                    <li><a href="content/productos/cursos.html">8 Cursos de la Ruta de formación</a></li>
+                    <li><a href="content/productos/recursos.html">Recursos gráficos y audiovisuales</a></li>
                 </ul>
                 <p><strong><a href="#experiencias">Experiencias</a></strong></p>
                 <p><strong>Créditos</strong></p>

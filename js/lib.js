@@ -95,80 +95,39 @@ $(document).ready(function() {
     });
 
     //menu vertical 1
-    $(document).ready(function(){
-        $("#btn-edutec").click(function(){
-            $('.event').hide(500,"swing");
-            $('data-event').slideDown(500,"swing");
-        });
-        $("#btn-integratic").click(function(){
-            $('.event').hide(500,"swing");
-            $('.integratic').slideDown(500,"swing");
-        });
-        $("#btn-edunovatic").click(function(){
-            $('.event').hide(500,"swing");
-            $('.edunovatic').slideDown(500,"swing");
-        });
-        $("#btn-foro1").click(function(){
-            $('.event').hide(500,"swing");
-            $('.foro1').slideDown(500,"swing");
-        });
-        $("#btn-foro2").click(function(){
-            $('.event').hide(500,"swing");
-            $('.foro2').slideDown(500,"swing");
-        });
-        $("#btn-foro3").click(function(){
-            $('.event').hide(500,"swing");
-            $('.foro3').slideDown(500,"swing");
-        });
+    $(".btn").click(function(){
+        var id = $(this).attr('data-menu-id');
+
+        $('.event').hide(500,"swing");
+        $(id).css('position', "static");        
+        $(id).slideDown(500,"swing");
     });
 
     //menu vertical 2
-    $(document).ready(function(){
-        $("#btn-alex").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.alex').slideDown(500,"swing");
-            
-        });
-        $("#btn-catalina").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.catalina').slideDown(500,"swing");
-        });
-        $("#btn-diana").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.diana').slideDown(500,"swing");
-        });
-        $("#btn-jake").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.jake').slideDown(500,"swing");
-        });
-        $("#btn-jas").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.jas').slideDown(500,"swing");
-        });
-        $("#btn-jorge").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.jorge').slideDown(500,"swing");            
-        });
-        $("#btn-lili").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.lili').slideDown(500,"swing");
-        });
-        $("#btn-marga").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.marga').slideDown(500,"swing");
-        });
-        $("#btn-tati").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.tati').slideDown(500,"swing");
-        });
-        $("#btn-jorgej").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.jorgej').slideDown(500,"swing");
-        });
-        $("#btn-luis").click(function(){
-            $('.exp').hide(500,"swing");
-            $('.luis').slideDown(500,"swing");
-        });
+    $(".btn2").click(function(){
+        var id = $(this).attr('data-menu-id');
+
+        $('.exp').hide(500,"swing");
+        $(id).css('position', "static");
+        $(id).slideDown(500,"swing");
+    });
+    
+//Mostrar
+    $('.recurso.foto').click(function(){
+        $('.cont').hide(500,"swing");
+        $('#foto').show(500,"swing");
+    });
+    $('.recurso.ilustracion').click(function(){
+        $('.cont').hide(500,"swing");
+        $('#ilus').show(500,"swing");
+    });
+    $('.recurso.video').click(function(){
+        $('.cont').hide(500,"swing");
+        $('#vid').show(500,"swing");
+    });
+    $('.recurso.sonido').click(function(){
+        $('.cont').hide(500,"swing");
+        $('#son').show(500,"swing");
     });
 
 //Menu de navegación
