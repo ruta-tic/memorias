@@ -126,6 +126,24 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+
+//Botón de Menu de navegación
+    if (screen.width<700){
+        $('.btn-menu').click(function(){
+            $('.btn-menu').hide();
+            $('header').addClass('visible');
+            $('header').css('left', "0");
+        });
+        $('.menu-ppal').click(function cerrar(){
+            $('.btn-menu').show();
+            $('header').removeClass('visible');
+        });
+        $('.btn-close').click(function cerrar(){
+            $('.btn-menu').show();
+            $('header').removeClass('visible');
+        });
+    };
+
 //Menu de navegación
     $('[data-offset="true"]').each(function(){
         var $this = $(this);

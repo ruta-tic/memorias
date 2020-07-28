@@ -46,13 +46,22 @@ h3 {
 /********************************************************************************/
 /* General
 /********************************************************************************/
+header.scroll_top .btn-menu, header .btn-menu,
+header.scroll_top .btn-close, header .btn-close {
+    display: none;
+}
+
 .scroll_top {
     position: fixed;
     width: 100%;
     z-index: 1;
-    padding: 10px;
+    padding: 0;
     top: 0;
     background-color: #fff;
+}
+
+.scroll_top img {
+    display: none;
 }
 
 .mas a {
@@ -325,9 +334,9 @@ h3 {
 }
 
 .icono.icono-correo {
-    width: 70px;
-    height: 57px;
-    background-position: -78px -364px;
+    width: 30px;
+    height: 22px;
+    background-position: -428px -245px;
 }
 
 .icono2.scorm {
@@ -489,24 +498,28 @@ header #navbar .redes-sociales a {
 /********************************************************************************/
 #que-es .que-es {
     background: url(../img/que-es-rutatic.png) no-repeat center;
-    height: 478px;
+    background-size: 100% 100%;
+    padding-bottom: 200px;
+    height: auto;
     color: #fff;
     display: flex;
     justify-content: space-around;
 }
 
+#que-es .que-es .imagen,
 #que-es .que-es .text {
-    padding: 10px 100px;
+    padding: 10px;
 }
 
-#que-es .que-es .imagen {
-    padding: 40px 50px;
+#que-es .imagen.col-2 {
+    text-align: center;
 }
 
 #que-es .logos {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 /********************************************************************************/
 /* Equipo
@@ -714,6 +727,7 @@ header #navbar .redes-sociales a {
 .modal_container .modal-content.modal-investigador {
     background: #fff url(../img/02investigadores5.png) no-repeat center top;
     background-size: 100% 90%;
+    overflow: auto;
 }
 
 .modal_container .row {
@@ -772,9 +786,8 @@ header #navbar .redes-sociales a {
     align-items: center;
 }
 
-.modal_container .correo .icono{
-    transform: scale(0.6);
-    margin-right: -10px;
+.modal_container .correo .icono {
+    margin-right: 5px;
 }
 
 .modal_container .close {
