@@ -67,7 +67,7 @@ header.scroll_top .btn-close, header .btn-close {
 .mas a {
     display: flex;
     align-items: center;
-    color: #b9eaff;
+    color: #869592;
     text-decoration: none;
     font-size: 22px;
     filter: grayscale(1);
@@ -76,6 +76,7 @@ header.scroll_top .btn-close, header .btn-close {
 
 .mas a:hover {
     filter: grayscale(0);
+    color: #b9eaff;
 }
 
 .mas a i {
@@ -108,7 +109,7 @@ header.scroll_top .btn-close, header .btn-close {
 
 #menu-lateral {
     position: absolute;
-    left: 4%;
+    left: 6%;
     padding-top: 30px;
     height: 300px;
 
@@ -400,6 +401,13 @@ header.scroll_top .btn-close, header .btn-close {
 header {
     padding: 30px 0 0;
     background-color: #fff;
+    position: relative;
+}
+
+header .cont {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
 }
 
 header .menu-ppal,
@@ -411,17 +419,22 @@ header img {
 header .redes-sociales {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
     background-color: #fff;
     z-index: 2;
     padding-top: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
 }
 
 header .redes-sociales div,
 header .redes-sociales a {
     margin-right: 10px;
+}
+
+header .redes-sociales a:hover {
+    filter: opacity(0.5);
+    transform: scale(1.3);
 }
 
 header .buscador {
@@ -458,7 +471,6 @@ header nav.menu-ppal ul li a:hover,
 header nav.menu-ppal ul li a:active,
 header nav.menu-ppal ul li a:focus {
     color: #74c8d2;
-    font-weight: bold;
 }
 
 header #navbar {
@@ -496,14 +508,19 @@ header #navbar .redes-sociales a {
 /********************************************************************************/
 /* Qué es
 /********************************************************************************/
-#que-es .que-es {
+#que-es .q-e-fondo {
     background: url(../img/que-es-rutatic.png) no-repeat center;
     background-size: 100% 100%;
+}
+
+#que-es .que-es {
     padding-bottom: 200px;
     height: auto;
     color: #fff;
     display: flex;
     justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
 }
 
 #que-es .que-es .imagen,
@@ -634,27 +651,30 @@ header #navbar .redes-sociales a {
 #equipo .modal-content.colab {
     overflow: auto;
     z-index: -1;
-    padding-top: 40px;
-    padding-bottom: 100px;
-    height: auto;
-    background: #f5f5f5 url(../img/fondo-formas1.png) repeat-y top;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    background-color: #f5f5f5;
+    width: 90%;
+    height: 75vh;
 }
 
 #equipo .modal-content.colab .close {
-    position: absolute;
-    right: 0px;
-    top: 0;
-    width: 98%;
+    position: fixed;
+    right: 4%;
+    left: 2%;
+    top: 10vh;
     text-align: right;
     background-color: #e8e8e8;
     padding-right: 2%;
+    z-index: 1;
 }
 #equipo .modal-content .colaboradores {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: left;
     position: relative;
+    background: url(../img/fondo-formas1.png) repeat-y top;
 }
 
 #equipo .modal-content .fondo {
@@ -667,7 +687,7 @@ header #navbar .redes-sociales a {
 }
 
 #equipo .modal-content .colaboradores .colaborador {
-    width: 200px;
+    width: 330px;
     margin: 40px 0;
 }
 
@@ -705,7 +725,7 @@ header #navbar .redes-sociales a {
     display: none; 
     position: fixed; 
     z-index: 2;
-    padding-top: 60px;
+    padding-top: 10vh;
     left: 0;
     top: 0;
     width: 100%;
@@ -807,6 +827,11 @@ header #navbar .redes-sociales a {
 /********************************************************************************/
 /* Conocimiento
 /********************************************************************************/
+#conocimiento {
+    max-width: 1200px; 
+    margin: auto;
+}
+
 #conocimiento .col-2 {
     padding: 50px 20px 50px;
 }
@@ -851,6 +876,8 @@ header #navbar .redes-sociales a {
 
 #eventos .row {
     padding: 0 80px 50px 100px;
+    max-width: 1100px;
+    margin: auto;
 
 }
 
@@ -913,12 +940,12 @@ header #navbar .redes-sociales a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 920px;
+    max-width: 1200px;
     margin: auto;
 }
 
 #productos .producto {
-    width: 225px;
+    width: 220px;
     padding: 30px 30px 40px;
     margin: 10px;
     border-radius: 10px;
@@ -984,7 +1011,7 @@ header #navbar .redes-sociales a {
     background-color: #db9e31;
     filter: none;
     padding: 5px 10px;
-    width: 140px;
+    width: 150px;
 }
 
 #productos .producto.moodle .boton:hover {
@@ -996,6 +1023,14 @@ header #navbar .redes-sociales a {
 #experiencias {
     background: url(../img/01-testimonios.png) no-repeat;
     position: relative;
+    padding-top: 55px;
+}
+
+#experiencias .cont {
+    max-width: 1200px;
+    min-height: 415px;
+    margin: auto;
+    background-color: #f6f6f6;
 }
 
 #experiencias .row {
@@ -1009,6 +1044,7 @@ header #navbar .redes-sociales a {
 #experiencias .col-2.text h3,
 #experiencias .col-2.text p {
     padding: 0 62px 0 70px;
+    min-height: 60px;
 }
 
 #experiencias .col-2.text div {
@@ -1029,7 +1065,7 @@ header #navbar .redes-sociales a {
 }
 
 #experiencias #menu-lateral {
-    padding-top: 60px;
+    padding-top: 20px;
     height: 380px;
 }
 
@@ -1054,6 +1090,10 @@ footer ul {
     padding-left: 15px;
 }
 
+footer li {
+    margin-bottom: 7px;
+}
+
 footer h3 {margin: 0;}
 
 footer .redes-sociales {
@@ -1066,11 +1106,20 @@ footer .redes-sociales a {
     margin: 5px;
 }
 
+footer .redes-sociales a:hover {
+    filter: opacity(0.5);
+    transform: scale(1.3);
+}
+
 footer .contact {text-align: right;margin:10px;}
 
 footer a {
     text-decoration: none;
     color: #fff;
+}
+
+footer a:hover {
+    color: #b9eaff;
 }
 /********************************************************************************/
 /* Recursos multimedia
@@ -1460,13 +1509,14 @@ footer a {
 #cursos .educacion2 { top: 372px; left: 242px;}
 #cursos .educacion2 img {left: 22%; top: -10%;}
 #cursos .educacion2:hover:after {
-    content: "educacion2";
+    content: "¿Qué y cómo enseñar?";
     bottom: 152px;
+    left: 0;
 }
 #cursos .educacion1 { top: 325px; left: 175px;}
 #cursos .educacion1 img {left: 23%; top: -15%;}
 #cursos .educacion1:hover:after {
-    content: "educacion1";
+    content: "Tecnologías para la enseñanza";
     bottom: 160px;
     left: -5px;
 
@@ -1485,4 +1535,41 @@ footer a {
     text-align: right;
     background-color: #e8e8e8;
     padding-right: 2%;
+}
+/********************************************************************************/
+/* Tables
+/********************************************************************************/
+.datatable {
+    border: 1px solid #003543;
+    border-spacing: 0;
+    border-collapse: none;
+    margin-bottom: 10px;
+}
+
+.datatable th {
+    padding: 15px;
+    text-align: center;
+    background-color: #003543;
+    border: 1px solid #999999;
+    border-top-width: 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.datatable td {
+    color: #003543;
+    padding: 10px;
+    border: 1px solid #003543;
+    border-top-width: 0;
+    empty-cells: show;
+}
+
+.datatable .odd td {
+    background-color: #eaeaea;
+}
+
+.datatable tfoot td {
+    background-color: #c9c9c9;
+    font-weight: bold;
+    color: #000;
 }
