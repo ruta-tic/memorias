@@ -1334,6 +1334,19 @@ footer a:hover {
     border-right: 1px solid #f3f3f3;
     padding: 5px 20px;
     cursor: pointer;
+    filter: grayscale(1);
+}
+
+#interactivos .contenidos .cont .info a {
+    text-decoration: none;
+}
+
+#interactivos .contenidos .cont .info:hover {
+    filter: grayscale(0);
+}
+
+#interactivos .contenidos .cont .info a:hover {
+    color: #b9eaff;
 }
 
 #interactivos .contenidos .cont .prev {
@@ -1345,12 +1358,23 @@ footer a:hover {
 
 #interactivos .contenidos .cont .name {
     min-width: 200px;
+    width: 40%;
     font-size: 18px;
     border-right: 1px solid #f3f3f3;
     padding-right: 20px;
 }
 
-#interactivos .contenidos .description {padding: 5px 20px;}
+#interactivos .contenidos .description {
+    padding: 5px 20px;
+    margin: auto;
+    min-width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#interactivos .iconos {
+    width: 10%;
+}
 
 #interactivos .iconos .download {
     background: url(../img/spritesheet2.png) no-repeat;
@@ -1359,6 +1383,13 @@ footer a:hover {
     background-position: -77px -5px;
     margin-left: 20px;
     cursor: pointer;
+    transition: .3s;
+    margin: auto;
+}
+
+#interactivos .iconos .download:hover {
+    transform: scale(1.2);
+    transition: .3s;
 }
 /********************************************************************************/
 /* Contenidos scorm
@@ -1467,35 +1498,35 @@ footer a:hover {
 #cursos .tecnologias-educacion { top: 103px; left: 215px;}
 #cursos .tecnologias-educacion img { left: 40%; top: -10%;}
 #cursos .tecnologias-educacion:hover:after {
-    content: "Tecnologias educacion";
+    content: "Tecnologías en educación";
     bottom: 170px;
     left: 36px;
 }
 #cursos .salud2 { top: 83px; left: 663px;}
 #cursos .salud2 img {left: 53%; top: -8%;}
 #cursos .salud2:hover:after {
-    content: "salud2";
+    content: "Tecnologías en salud";
     bottom: 160px;
     left: 48px;
 }
 #cursos .salud1 { left: 574px; top: -6px;}
 #cursos .salud1 img {left: 43%; top: -9%;}
 #cursos .salud1:hover:after {
-    content: "salud1";
+    content: "Salud y educación";
     bottom: 220px;
     left: 46px;
 }
 #cursos .ingenieria2 { top: 123px; left: 432px;}
 #cursos .ingenieria2 img {left: 40%; top: 10%;}
 #cursos .ingenieria2:hover:after {
-    content: "ingenieria2";
+    content: "Tecnologías en ingeniería";
     bottom: 195px;
     left: 78px;
 }
 #cursos .ingenieria1 { top: 233px; left: 269px;}
 #cursos .ingenieria1 img {left: 45%; top: 6%;}
 #cursos .ingenieria1:hover:after {
-    content: "ingenieria1";
+    content: "Ingeniería y educación";
     bottom: 194px;
     left: 92px;
 }
@@ -1572,4 +1603,37 @@ footer a:hover {
     background-color: #c9c9c9;
     font-weight: bold;
     color: #000;
+}
+
+/********************************************************************************/
+/* IMAGE TO EXPAND
+/********************************************************************************/
+.preview {max-width: 100%;}
+
+.expand-image a {
+    width: 150px;
+    position: relative;
+    transition: all .3s;
+}
+
+.expand-image a:hover {
+    filter: grayscale(0.6);
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.expand-image a {position: relative;}
+
+.expand-image a:after {
+    content: "ver vista previa";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    padding: 5px 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    /*z-index: 1;*/
+    background-color: #777;
+    color: #fff;
 }

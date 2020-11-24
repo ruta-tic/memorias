@@ -11,9 +11,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="../../js/lib.js" type="text/javascript"></script>
 
+    <script src="../../components/fresco/dist/js/fresco.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../components/fresco/dist/css/fresco.css" />
+
     <style>
         #body .content {
             padding: 0 60px;
+            max-width: 1200px;
+            margin: auto;
         }
         .imagen {
             text-align: center;
@@ -23,27 +28,29 @@
 <body data-autoload="false" data-display-window="modal" data-window-width="100" data-window-height="100">
     <div id="body">
         <header data-offset="true">
-            <img src="../../img/logo_1.png" alt="Ruta TIC" />
-            
-            <div class="btn-menu">
-                <ion-icon size="large" name="menu-outline"></ion-icon>
-            </div>
-            <div class="btn-close">X</div>
-            <nav class="menu-ppal" >
-                <ul>
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="../../index.html#equipo">Nuestro equipo</a></li>
-                    <li><a href="../../index.html#conocimiento">Generación de conocimiento</a></li>
-                    <li><a href="../../index.html#eventos">Eventos</a></li>
-                    <li><a href="../../index.html#productos">Productos</a></li>
-                    <li><a href="../../index.html#experiencias">Experiencias</a></li>
-                </ul>
-                <div class="redes-sociales">
-                    <a class="icono galeria-oscuro" href="https://rutatic.udea.edu.co/crotalus/" target="_blank"></a>
-                    <a class="icono icono-facebook-oscuro" href="https://www.facebook.com/Ruta-de-Apropiaci%C3%B3n-en-Tic-para-la-cualificaci%C3%B3n-docente-109853250380664" target="_blank"></a>
-                    <a class="icono icono-twitter-oscuro" href="https://twitter.com/ruta_tic" target="_blank"></a>
+            <div class="cont">
+                <img src="../../img/logo_1.png" alt="Ruta TIC" />
+                
+                <div class="btn-menu">
+                    <ion-icon size="large" name="menu-outline"></ion-icon>
                 </div>
-            </nav>
+                <div class="btn-close">X</div>
+                <nav class="menu-ppal" >
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../index.html#equipo">Nuestro equipo</a></li>
+                        <li><a href="../../index.html#conocimiento">Generación de conocimiento</a></li>
+                        <li><a href="../../index.html#eventos">Eventos</a></li>
+                        <li><a href="../../index.html#productos">Productos</a></li>
+                        <li><a href="../../index.html#experiencias">Experiencias</a></li>
+                    </ul>
+                    <div class="redes-sociales">
+                        <a class="icono galeria-oscuro" href="https://rutatic.udea.edu.co/crotalus/" target="_blank"></a>
+                        <a class="icono icono-facebook-oscuro" href="https://www.facebook.com/Ruta-de-Apropiaci%C3%B3n-en-Tic-para-la-cualificaci%C3%B3n-docente-109853250380664" target="_blank"></a>
+                        <a class="icono icono-twitter-oscuro" href="https://twitter.com/ruta_tic" target="_blank"></a>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <div id="interactivos" class="content">
@@ -53,27 +60,588 @@
             <div class="contenidos">
                 
                 <div class="cont">
-                    <div class="name">Lorem ipsum dolor sit amet</div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac convallis ipsum, ut viverra enim. Donec vitae accumsan dolor. Nullam fermentum pretium porta. Maecenas sit amet sapien velit. </p>
+                    <div class="name">Distinción entre medios y tecnologías</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/edu-tecno-disci-iniciacion-ova-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/edu-tecno-disci-iniciacion-ova-imagen1.png" />
+                        </a>
                     </div>
-                    <div class="prev"></div>
-                    <div class="info"><p>ver en línea<div class="icono2 flecha-gris"></div></p></div>
+                    <div class="info"><p><a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/N0IyNTNEREQtRDdDQS00OUFFLTlGMUYtNEVCMEUxQjM2MjRDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a></p></div>
                     <div class="iconos">
-                        <div class="download"></div>
+                        <a href="https://drive.google.com/file/d/1j9B8RuTvaFRDcX4MCYIhZOkwGfaF2n08/view?usp=sharing" target="_blank"><div class="download"></div></a>
                     </div>
                 </div>
+
                 <div class="cont">
-                    <div class="name">Lorem ipsum dolor sit amet</div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac convallis ipsum, ut viverra enim. Donec vitae accumsan dolor. Nullam fermentum pretium porta. Maecenas sit amet sapien velit. </p>
+                    <div class="name">Evolución de la educación en ingeniería</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-ova0-imagen1.png" class='fresco' data-fresco-group='evo-edu-ing'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-ova0-imagen1.png" />
+                        </a>
+                        <a href="interactivo/ing-pedago-disciplinar-ova0-imagen2.png" class='fresco' data-fresco-group='evo-edu-ing'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-ova0-imagen2.png" />
+                        </a>
                     </div>
-                    <div class="prev"></div>
-                    <div class="info"><p>ver en línea<div class="icono2 flecha-gris"></div></p></div>
+                    <div class="info"><p><a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MjgyNkY1NTEtMDU2Mi00NUFGLTkzMTUtQkEwRjM4QTVENzNDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a></p></div>
                     <div class="iconos">
-                        <div class="download"></div>
+                        <a href="https://drive.google.com/file/d/1jgSO-Sg3CzMUmHCyhvaq6hgNO7spoAmq/view?usp=sharing" target="_blank"><div class="download"></div></a>
                     </div>
                 </div>
+
+                <div class="cont">
+                    <div class="name">Introducción a la iniciativa CDIO</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-ova1-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-ova1-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MzExMTRCNEUtQUQ0NS00OUJCLThBN0ItMERGQ0VCNkU3QjRGQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1yBUI0Fm_3ireQB7b8Z-7VWjHUboQ78zf/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Estándares CDIO</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-ova2-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-ova2-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/OEIyQjI5NTgtMEM3RC00MUIwLTgxRkItNzg4NkI3RDYzM0Q5QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1YcnCjSsAYBq_FXDb064RmAm1vrB2uNEE/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Evaluación de aprendizajes</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-inmersion-ova1-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-inmersion-ova1-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info"><p><a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/Q0VDOUYwMzItRjBBOC00QTdCLUE2MDMtQ0YyRUYyQzA3MTU3QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a></p></div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1Sz1SMUyTx9AK1PyttNmvEjdAKqk9hHsk/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Pirámide Miller</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-inmersion-ova1-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-inmersion-ova1-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/NjFEQTY1QzItRUExNS00RkQ5LTlCMjctM0E1NjE3REE2MEZGQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1uc3aCNMApYA0gBzEhVrKGZzvfdhEXzNZ/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Algunas miradas sobre la formación de ingenieros</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-inmersion-ova2-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-inmersion-ova2-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/OTk5MzlBOEMtRkU4RC00N0VFLUIwRDMtQzc3QjU4RTAzRDZCQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/17jh7Yflrh6e7G_8b5nHQrDnplO9ZZLIF/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Estrategias didácticas para la formación de ingenieros</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-pedago-disciplinar-inmersion-ova2-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-pedago-disciplinar-inmersion-ova2-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MzhFNzI4RjAtNjA3QS00MUFCLTlFMzUtQkY4QUNDRDg2NDNDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1uE-xr-jz7HsYWNN4oU6HsMDt2WWjmWFC/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">¿Por qué utilizar tecnologías digitales en la ingeniería?</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-tecno-disci-inmersion-ova1-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-tecno-disci-inmersion-ova1-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/NDY5MzMzNTgtOTY3RC00MkUyLUEyMUYtMDc0ODM1RUE4OTg1QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1c2kcqRfjUxGk_ZoOqup_O5riEe3RQe19/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Suma tecnologías para obtener soluciones</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-tecno-disci-inmersion-ova2-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-tecno-disci-inmersion-ova2-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RDg5MTMxNTQtNzk4MS00QTFDLUFCNDAtNUZBMjVBODBDQkU0QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1gJnjnxvYAL8GFrPIYgpLR_tBitrefWFF/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Tipos de tecnologías</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/ing-tecno-disci-inmersion-ova2-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/ing-tecno-disci-inmersion-ova2-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/OUYxMjQ2RkUtQzQ1Ni00MzMzLUEzRUEtREE3NzkwN0Q0QTY2QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/14QU2F1DqoV1VF9ImY7UJwVBUIrmDnNcx/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Evolución del concepto Salud/Enfermedad</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-peda-discipli-iniciacion-ova1-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-peda-discipli-iniciacion-ova1-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MUVBMzE3NTctQThFQi00QTlELTg0QzMtNzI3NEY3MTkzQzJBQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1U-AZy8shyvxErPTuRivC98C9xjQ9CVsr/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Introducción a los estilos de aprendizaje</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-peda-discipli-iniciacion-ova2-imagen1.png" class='fresco' data-fresco-group='sal-ped-dis-ini'>
+                            <img class="preview" src="interactivo/salud-peda-discipli-iniciacion-ova2-imagen1.png" />
+                        </a>
+                        <a href="interactivo/salud-peda-discipli-iniciacion-ova2-imagen2.png" class='fresco' data-fresco-group='sal-ped-dis-ini'>
+                            <img class="preview" src="interactivo/salud-peda-discipli-iniciacion-ova2-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/NTA0NEUxMDQtQTA4MC00NkI2LThEOEYtNjMxREFFMTJCQTNEQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1qzCq5JvkcrOXQIjCMKjDnju3UeCRq0BX/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Estrategias didácticas</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-peda-discipli-iniciacion-ova3-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-peda-discipli-iniciacion-ova3-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/QTNFNjk0MTktNUNFRi00ODVELUFDRjktRjc1OEMwRjU1OTJDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/152rgLeX3YbL1SZsbZxGXEUYlxpaF6Wxr/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Pedagogía en el área de la salud</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-peda-discipli-iniciacion-ova3-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-peda-discipli-iniciacion-ova3-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/OEU2M0Y2NkItNTYxOC00NkEyLUI5RjUtQ0VGMUU4OTg0NDE2QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1ZjBU2kMzho7T6JVVexpwXz78Sh0HjlnK/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Estrategias</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-peda-discipli-iniciacion-ova4-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-peda-discipli-iniciacion-ova4-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RDZDOEE1NDgtMjlDNi00QjNELTgzRkEtMEQxMEZDQTM3N0M1QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1Mx58uu-KxttTBQ-mE39gTE4YsDT9yKRm/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Tecnologías en salud</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-tecno-disci-iniciacion-ova1-imag1.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-tecno-disci-iniciacion-ova1-imag1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MzdBNThGNEQtNkZFNC00RDU2LThCRTItMUUwOEVGQjNGQjBDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1bL0Vrp_nBG2EVbk3KH3wXCZU-QQ0NwuC/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">La telesalud</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-tecno-disci-inmersion-ova2-imag1.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-tecno-disci-inmersion-ova2-imag1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MEQ4RTMxMkItNzZDOC00NEU0LTlGMjgtODUwQzNCMTgzNTlFQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1-rLuIwc4x9ZkNyS_5LsLh54I03Y5yuoU/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Salud móvil y atención sanitaria</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/salud-tecno-disci-inmersion-ova3-imag2.png" class='fresco'>
+                            <img class="preview" src="interactivo/salud-tecno-disci-inmersion-ova3-imag2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/Nzc1NkZERjMtREU4MS00MjA3LUJCOEMtRDY2QTBGOEFEMkY3QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1bj13K_k-XVDny_kh4Ulm865DSeH60-Or/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Características de la comunicación digital:</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/iniciacion-ova1-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/iniciacion-ova1-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RkEzN0Q4RkYtRjU3RC00RDY0LTkzMjgtQzkyODQ1MENCQzZFQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1Gr73sTsFQYv6gyU01EVkCzkEWfHT3U_G/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Herramientas de comunicación asincrónicas</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/iniciacion-ova1-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/iniciacion-ova1-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/QjZEQzdDNDAtQTI4NS00N0U0LUI2QUQtMjg2MEY5OUEzMURDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1fHPOqx6h_6votMDY9sYR9eKy2uhMmhTW/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Herramientas de comunicación sincrónica</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/iniciacion-ova1-imagen3.png" class='fresco'>
+                            <img class="preview" src="interactivo/iniciacion-ova1-imagen3.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/QjczQkE1REItMThCQy00RjcxLTg5QTgtOTM1REE5MTIzNDlEQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1ur3ZMTLGKQeV3r1wqjLX2rU9sDdW7npQ/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Rol del profesor y el estudiante en la educación virtual</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/iniciacion-ova3-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/iniciacion-ova3-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RjMwODVERjktRTI1Qy00RTk2LUI1NkYtOUIzQzgxMTBGQjdCQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1odKHdWx-Gb8t-gg0IN4oyEXSwikrJt1_/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">¿Qué pasos puedo seguir para integrar tecnologías en mi proceso de enseñanza?</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/NjIyMUQyRUUtNjZENy00N0RELUEwQUEtQ0UwQ0IzMEJBNkJDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1_pOFsaaO2o6OhF1FydkbBHb-lTHL0ZEw/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Modelo SAMR</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/OTgyRjk4N0EtMEREQy00MEY4LUE2QzMtMERDMTEzODc2RERFQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1Z-IeTWHJaZ3hm9GDUqxBkYyHPn04QgS0/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Sugerencias para una videoconferencia</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova1-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova1-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RTJBMjE0NjItOUIyNC00RUI3LUE1MDUtNEY0QzFGMzA2M0Y5QGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1Zro7YKBDdlK5uc1F2g0JOo7LNMR9oslj/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Sugerencias para participar en un foro</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova1-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova1-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RjI2NjY2N0EtOEY1RS00MzY4LUJERjktRjUyOUM3RDUzODRGQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/11lWVvDYqD_Mq_8piyIQ6w8-CWD6ZxBha/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Resultados de búsqueda de información</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova3-imagen1.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova3-imagen1.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/ODJDNDkyNTMtMDI5QS00NUEwLTk4MDUtOENBNjYwMUVDOTkwQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1hmgCmx7IiBCz03hVMqrvzSfl0F5icBCR/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Evaluación de un RED</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova3-imagen2.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova3-imagen2.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/N0NENkJGNDItMDY0NS00NjEyLUJEOEUtQTIzRUQ4QUQ0QkRGQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/16H7uwuloPNygLFLrnpCkbapE4lr8ky4H/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Reusar un RED existente</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova3-imagen3.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova3-imagen3.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/MzAyQ0Y4OEYtQTlFRS00OTAxLUE5MzAtREIzQzgxRkQzMjZDQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1z2m8tjgDrWBVF3P3HeSCM4h72KYaaIis/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Producir un RED</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova3-imagen4.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova3-imagen4.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/RjM5OUMwREItMkUwMi00Q0EzLTkzMjctRkU4MjNEMzA5NzYwQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1Q9ANK826hVY5FWziQ_Ipdnii43V9x8Ps/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Repositorios de recursos educativos digitales</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova3-imagen5.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova3-imagen5.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/OEQ2QzgwNDUtRjgzQi00M0Q0LUI1MEQtNDc3QUE0ODBCRDczQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1GqFdQLtGU2hUpCmWIKprNIKzi9bgOL6B/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="name">Criterios para realizar la búsqueda de información</div>
+                    <div class="description expand-image">
+                        <a href="interactivo/inmersion-ova3-imagen6.png" class='fresco'>
+                            <img class="preview" src="interactivo/inmersion-ova3-imagen6.png" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="https://boa.udea.edu.co/api/c/ruta-tic/resources/N0FFMEY5QTktNTg0OC00QUYzLUFERUQtMzYwRjI5NDFCM0NGQGJvYS51ZGVhLmVkdS5jbw/!/" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://drive.google.com/file/d/1JdbyFhB40CMiH94t3fyT_6YX2pqPbEjU/view?usp=sharing" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="cont">
+                    <div class="name"></div>
+                    <div class="description expand-image">
+                        <a href="interactivo/" class='fresco' data-fresco-group=''>
+                            <img class="preview" src="interactivo/" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            <a href="" target="_blank">ver en línea<div class="icono flecha-azul"></div></a>
+                        </p>
+                    </div>
+                    <div class="iconos">
+                        <a href="" target="_blank"><div class="download"></div></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
